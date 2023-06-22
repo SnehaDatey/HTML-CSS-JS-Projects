@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Create your Google Account</title>
+        <link rel="icon" href="./images/googleTabImage.jpg" type="image/icon type">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="google-main-block">
+
+            <div class="left-block">
+
+                <div class="google-img"><img src="./images/img1.png"> </div>
+                <div class="heading1">Create your Google Account</div><br>
+                <span class="heading2"> To continue to Gmail</span>
+
+
+                <div class="name-block">
+                    <input type="text" name="fname" id="fname" placeholder="First Name" class="nameFirstLast">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name"  class="nameFirstLast">
+
+                    
+                            <div id="nameErr"></div>
+                           
+                   
+
+                    <input type="text" name="userName" id="userName" placeholder="Username" class="uname">
+                    <div class="unametxt">you can use letters, numbers & periods</div>
+                    <div id="userNameErr"></div>
+
+
+                    <input type="password" name="pass" id="pass" placeholder="Password" class="nameFirstLast">
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm" class="nameFirstLast">
+                    <p>use 8 or more characters with a mix of letters, numbers & symbols</p>
+                    <div id="passErr"></div>
+                    <div id="successMsg"></div>
+
+                    <input type="checkbox" id="showPassword" name="showPassword" value="showPass" class="checkPass" onclick="myFunction()">
+                    <label class="showPassTxt">Show Password</label>
+
+
+                    <div class="next-block">
+
+                        <div class="signIn"><a href="#">Sign in instead</a></div>
+                        <div class="next-btn">
+                            
+                    <button class="buttonCalc" id="next" onclick="checkValidations()">Next</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <div class="right-block">
+
+                <div class="google-img"><img src="./images/img2.png"> </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="last-block">
+
+            <div class="last-leftBlock">
+                <select name="language" id="language">
+                    <option value="engUK">English(United Kingdom)</option>
+                    <option value="engUSA">English(United States)</option>
+                </select>
+            </div>
+
+            <div class="last-rightBlock">
+                <ul>
+                    <li>Help</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+
+            </div>
+           
+
+        </div>
+
+
+
+<script src="script.js"></script>
+    </body>
+    </html>

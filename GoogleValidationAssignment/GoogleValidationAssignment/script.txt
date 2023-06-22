@@ -1,0 +1,72 @@
+function checkValidations(){
+
+
+
+    
+    var firstName = document.getElementById('fname').value;
+    var lastName = document.getElementById('lname').value;
+    var userName = document.getElementById('userName').value;
+    var userpass = document.getElementById('pass').value;
+    var cnfPass = document.getElementById('confirm').value;
+
+
+   // console.log(firstName,lastName,userName,userpass,cnfPass);
+
+            document.getElementById('nameErr').innerHTML ='';
+            document.getElementById('userNameErr').innerHTML ='';
+            document.getElementById('passErr').innerHTML ='';
+            document.getElementById('passErr').innerHTML = '';
+            document.getElementById('successMsg').innerHTML = '';
+
+   if(firstName=='' && lastName =='')
+   {
+    document.getElementById('nameErr').innerHTML = 'Please Enter First and Last Name';
+    } 
+
+    else if(firstName==''){
+        document.getElementById('nameErr').innerHTML = 'Please Enter First Name';
+    }
+
+    else if(lastName ==''){
+        document.getElementById('nameErr').innerHTML = 'Please Enter Last Name';
+    }
+
+    else if(userName ==''){
+        document.getElementById('userNameErr').innerHTML = 'Please Enter Username';
+    }
+
+    else if(userpass ==''){
+        document.getElementById('passErr').innerHTML = 'Please Enter Password';
+    }
+
+    else if(userpass.length < 8){
+        document.getElementById('passErr').innerHTML = 'Use 8 characters or more for your password';
+    }
+
+    else if(cnfPass ==''){
+        document.getElementById('passErr').innerHTML = 'Please Enter Confirm Password';
+    }
+
+    else if(userpass!=cnfPass){
+        document.getElementById('passErr').innerHTML = 'Passwords did not match. Try again.';
+    }
+
+    else{
+        document.getElementById('successMsg').innerHTML = 'You logged in successfully.';
+    }
+
+
+}
+
+function myFunction() {
+    
+    var showPasswordtxt = document.getElementById("pass");
+    var showCnfPasswordtxt = document.getElementById("confirm");
+    if (showPasswordtxt.type === "password" && showCnfPasswordtxt.type=== "password") {
+        showPasswordtxt.type = "text";
+        showCnfPasswordtxt.type = "text";
+    } else {
+        showPasswordtxt.type = "password";
+        showCnfPasswordtxt.type = "password";
+    }
+  }
