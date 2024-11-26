@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.searchbar{
+    position: relative;
+}
+
+.searchbar i{
+    position: absolute;
+   right: 4%;
+   color: rgb(194, 192, 192);
+   top: 25%;
+    
+}
+.container{
+    background-color:#fff;
+    font-weight: 500;
+}
+
+.fa-sparkle{
+    color: yellow;
+}
+
+.bg-nav-color{
+    background-color: #fff;
+}
+.nav-item {
+    padding:0px 5px;
+    white-space: nowrap;
+}
+
+.cart-box{
+    padding:0px 15px;
+    position: relative;
+}
+
+.cart-box .cart-count{
+    position: absolute;
+   
+}
+
+.img-menu{
+    margin-top: 70px;
+    height: 120px;
+}
+
+.col-12{
+    padding: 10px;
+    height: 100px;
+    width: 110px;
+    margin: 0px 15px;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 img{
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCarousel{
+    background-color: #fff;
+}
+
+.productCarousel .row{
+    display: flex;
+    
+}
+
+
+.form-check-label{
+    float: left;
+}
+
+.productCarousel .row  .filterBox{
+    flex-basis: 25%;
+    /* border: 1px solid tomato; */
+    height: fit-content;
+}
+
+.productCarousel .row .ProductBox{
+    flex-basis: 65%;
+    /* border: 1px solid green; */
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productCarousel h2{
+    color: black;
+    font-size: x-large;
+    padding:9px 0px;
+}
+
+.ProductBox .product-item{
+    /* border: 1px solid rgb(47, 0, 255); */
+    height: 325px;
+    width: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+.ProductBox .product-item img{
+    height: 167px;
+    width: auto;
+}
+
+.productTitle{
+    margin-top: -13px;
+    height: 50px;
+}
+
+.form-check-input[type=checkbox]{
+    margin: 5px 5px;
+}
+
+.CategoryList{
+    /* border: 1px solid rgb(228, 226, 225); */
+    padding: 5px 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+.categoryInner{
+    margin: 10px;
+    border: 1px solid green;
+}
+
+.filter-condition{
+    border: 1px solid black;
+    margin: 0 auto;
+   
+}
+
+
+.pagination{
+    margin: 5px;
+    gap: 5px;
+    justify-content: center;
+}
+
+.pagination .btn{
+    width: 50px;
+    background-color: #fff;
+    color: #0d6efd;
+}
+
+.pagination .btn:hover{
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.pagination .btn.active{
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+
